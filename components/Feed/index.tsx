@@ -1,10 +1,20 @@
-import React from 'react';
+import minifaker from 'minifaker';
+import Stories from '../Stories';
 
 const Feed = () => {
   return (
-    <div>
-      <h1>Feed</h1>
-    </div>
+    <main>
+      <section>
+        {/* Stories */}
+        <Stories />
+        {/* Posts */}
+      </section>
+
+      <section>
+        {/* Mini Profile */}
+        {/* Suggestions */}
+      </section>
+    </main>
   );
 };
 
