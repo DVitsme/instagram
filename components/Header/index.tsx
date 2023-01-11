@@ -1,15 +1,20 @@
-import Image from 'next/image';
 import React from 'react';
+import Logo from './logo';
+import Search from './search';
+import NavigationIcons from './navigationIcons';
 
 const Header = () => {
   return (
-    <div className="title">
-      <div className="cursor h-24 w-32 relative hidden md:inline-grid">
-        <Image
-          src={'/static/images/Instagram-Logo.png'}
-          alt="logo"
-          fill={true}
-        />
+    <div className="shadow-md border-b sticky top-0 bg-white z-30">
+      <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
+        {/* Left */}
+        <Logo />
+
+        {/* Middle */}
+        <Search />
+
+        {/* Right */}
+        <NavigationIcons />
       </div>
     </div>
   );
